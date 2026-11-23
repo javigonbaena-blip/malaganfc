@@ -132,7 +132,7 @@
   });
 
   /* ---------- Formularios: envío real a través de FormSubmit ---------- */
-  const FORM_ENDPOINT = "https://formsubmit.co/ajax/malaganfc@gmail.com";
+  const FORM_ENDPOINT = "https://sendm8.com/f/malaganfc@gmail.com";
   const CONTACT_EMAIL = "malaganfc@gmail.com";
 
   async function sendForm(form, msgEl, extra, okText) {
@@ -142,7 +142,7 @@
     msgEl.className = "form-msg";
     msgEl.textContent = "Enviando…";
 
-    const data = { _captcha: "false", _template: "table" };
+    const data = {};
     new FormData(form).forEach((value, key) => { data[key] = value; });
     Object.assign(data, extra);
     if (data.email) data._replyto = data.email;
@@ -160,7 +160,12 @@
       clearTimeout(timeout);
       let result = {};
       try { result = await response.json(); } catch (_) { /* respuesta no JSON */ }
-      if (!response.ok) throw new Error(result.message || "Error al enviar");
+      if (!response.ok || result.ok !== true) {
+        throw new Error((result.error && result.error.message) || result.message || "Error al enviar");
+      }
+      if (result.pending === "confirmation" && window.console) {
+        console.info("sendm8: " + result.message);
+      }
       msgEl.className = "form-msg ok";
       msgEl.textContent = okText;
       form.reset();
