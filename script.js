@@ -145,13 +145,19 @@
     const data = { _captcha: "false", _template: "table" };
     new FormData(form).forEach((value, key) => { data[key] = value; });
     Object.assign(data, extra);
+    if (data.email) data._replyto = data.email;
+
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 12000);
 
     try {
       const response = await fetch(FORM_ENDPOINT, {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
-        body: JSON.stringify(data)
+        body: JSON.stringify(data),
+        signal: controller.signal
       });
+      clearTimeout(timeout);
       let result = {};
       try { result = await response.json(); } catch (_) { /* respuesta no JSON */ }
       if (!response.ok) throw new Error(result.message || "Error al enviar");
@@ -159,8 +165,17 @@
       msgEl.textContent = okText;
       form.reset();
     } catch (err) {
+      clearTimeout(timeout);
+      const subject = (extra && extra._subject) || "Mensaje desde la web de Málaga NFC";
+      const body = [
+        data.nombre ? "Nombre: " + data.nombre : "",
+        data.email ? "Email: " + data.email : "",
+        data.mensaje ? "Mensaje: " + data.mensaje : ""
+      ].filter(Boolean).join("\n");
+      const mailto = "mailto:" + CONTACT_EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
       msgEl.className = "form-msg err";
-      msgEl.textContent = "No se pudo enviar. Inténtalo de nuevo o escribe a " + CONTACT_EMAIL + ".";
+      msgEl.innerHTML = "No se pudo enviar automáticamente. " +
+        '<a href="' + mailto + '">Ábrelo en tu correo</a> o escribe a ' + CONTACT_EMAIL + ".";
     } finally {
       if (btn) { btn.disabled = false; btn.textContent = originalText; }
     }
