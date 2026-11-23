@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b0c0e">
+  <title>Málaga NFC | Tarjetas NFC para reseñas de Google</title>
+  <meta name="description" content="Tarjetas NFC para conseguir más reseñas en Google: tu cliente acerca el móvil y deja su reseña al instante. Envío gratis a toda España en 1 a 2 semanas.">
+  <link rel="icon" href="assets/logo-neon.png">
+  <link rel="stylesheet" href="styles.css?v=19">
+</head>
+<body>
+  <a class="skip" href="#main">Ir directamente al contenido</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner wrap">
+      <a class="brand" href="#top" aria-label="Málaga NFC, ir al inicio">
+        <img src="assets/logo-neon.png" alt="Málaga NFC" width="50" height="50">
+        <span>Málaga NFC</span>
+      </a>
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <a href="#packs">Packs</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#configuracion">Guía</a>
+        <a href="#revendedores">Revendedores</a>
+        <a href="#faq">Preguntas frecuentes</a>
+      </nav>
+      <div class="header-actions">
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MOBILE DRAWER ================= -->
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-head">
+      <span>Menú</span>
+      <button class="icon-btn" id="drawerClose" aria-label="Cerrar menú">✕</button>
+    </div>
+    <nav aria-label="Navegación móvil">
+      <a href="#packs">Packs</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#configuracion">Guía</a>
+      <a href="#revendedores">Revendedores</a>
+      <a href="#faq">Preguntas frecuentes</a>
+    </nav>
+    <div class="drawer-foot">
+      <a href="#distribuidor">Contacto</a>
+      <a href="#envios">Envíos</a>
+      <a href="#devoluciones">Devoluciones</a>
+      <a href="#privacidad">Privacidad</a>
+    </div>
+  </aside>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Envío gratis a toda España</p>
+          <h1>Málaga NFC</h1>
+          <p class="hero-lead">Más reseñas en Google, con un solo toque.</p>
+          <p class="hero-text">Tu cliente acerca el móvil a la tarjeta y se abre tu página de reseñas al instante. Sin buscar tu negocio, sin escanear códigos y sin descargar nada.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#packs">Ver packs</a>
+            <a class="btn btn-line" href="#como-funciona">Cómo funciona</a>
+          </div>
+          <ul class="hero-perks">
+            <li>Desde €2,80 por tarjeta, IVA incluido</li>
+            <li>Envío gratis a toda España</li>
+            <li>Entrega en 1 a 2 semanas</li>
+            <li>Pago único, sin cuotas</li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="phone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="demo-top">TN <span>Tu negocio</span></div>
+              <div class="demo-stars">★ ★ ★ ★ ★</div>
+              <p class="demo-title">Valora tu experiencia</p>
+              <button class="demo-publish" type="button">Publicar</button>
+              <p class="demo-ok">✓ Reseña publicada</p>
+            </div>
+            <div class="tap-ring" aria-hidden="true"></div>
+          </div>
+          <div class="hero-drawing" aria-hidden="true">
+            <svg class="hd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7.5 8.5a5 5 0 0 1 0 7"/><path d="M11 6a8.6 8.6 0 0 1 0 12"/><path d="M14.5 3.6a12 12 0 0 1 0 16.8"/></svg>
+            <div class="hd-stars">★★★★★</div>
+            <span class="hd-label">Reseñas</span>
+          </div>
+          <span class="hero-badge">Acerca el móvil a la tarjeta</span>
+        </div>
+      </div>
+      <p class="hero-caption wrap">Ejemplo: el cliente acerca su móvil a la tarjeta, se abre la página de reseñas del negocio, elige cinco estrellas y publica su reseña.</p>
+    </section>
+
+    <!-- ================= AUDIENCE ================= -->
+    <section class="section audience" id="audiencia">
+      <div class="wrap">
+        <h2 class="center">Pensadas para cualquier negocio que vive de lo que se dice de él en Google.</h2>
+        <div class="tags">
+          <span>Restaurantes</span><span>Cafeterías</span><span>Peluquerías</span><span>Barberías</span>
+          <span>Centros de estética</span><span>Clínicas</span><span>Talleres</span><span>Tiendas</span>
+          <span>Hoteles</span><span>Gimnasios</span>
+        </div>
+        <div class="section-head">
+          <p class="eyebrow dark">¿Para qué las quieres?</p>
+          <p class="lead">Elige tu camino y te llevamos directo a lo que necesitas.</p>
+        </div>
+        <div class="path-grid">
+          <a class="path-card" href="#packs">
+            <span class="path-label">Para mi negocio</span>
+            <h3>Más reseñas en mi local</h3>
+            <p>Elige modelo y pack. Te ayudamos a vincularlas a tu ficha de Google para ponerlas en el mostrador.</p>
+            <span class="path-cta">Elegir mis tarjetas →</span>
+          </a>
+          <a class="path-card" href="#revendedores">
+            <span class="path-label">Para revender</span>
+            <h3>Véndelas a tus clientes</h3>
+            <p>Compra por packs a precio fijo y ofrécelas a negocios de tu zona. Para cantidades mayores, te hacemos precio.</p>
+            <span class="path-cta">Ver precios de revendedor →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section class="section how" id="como-funciona">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Así funciona</h2>
+          <p class="lead">De la caja a tu primera reseña en tres pasos.</p>
+        </div>
+        <ol class="steps">
+          <li><span class="step-num">1</span><h3>Recibe tu pack</h3><p>Te llega a casa o al local en 1 a 2 semanas, con el envío incluido.</p></li>
+          <li><span class="step-num">2</span><h3>Vincúlala a tu ficha de Google</h3><p>Se configura una sola vez con el enlace de reseñas de tu negocio. Si te surge alguna duda, escríbenos.</p></li>
+          <li><span class="step-num">3</span><h3>Tu cliente acerca el móvil</h3><p>Se abre tu página de reseñas al momento. Solo tiene que elegir las estrellas y escribir.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= GUÍA DE CONFIGURACIÓN ================= -->
+    <section class="section guia" id="configuracion">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Guía de configuración</p>
+          <h2>Programa tus tarjetas en 6 pasos</h2>
+          <p class="lead">Es solo la primera vez. Con tu móvil y la app NFC Tools, en unos minutos las tienes listas. Sigue estos pasos con calma.</p>
+        </div>
+        <ol class="guia-grid">
+          <li class="guia-step">
+            <div class="guia-number">1</div>
+            <img src="assets/guia-1.svg?v=16" alt="Buscar el establecimiento en ProductMate o Google y copiar el enlace">
+            <h3>Busca tu negocio y copia el enlace</h3>
+            <p>Abre <strong>ProductMate</strong> (o busca en Google) el nombre de tu establecimiento. Copia el enlace a tu página de reseñas.</p>
+          </li>
+          <li class="guia-step">
+            <div class="guia-number">2</div>
+            <img src="assets/guia-2.svg?v=16" alt="Instalar la app NFC Tools desde Play Store o App Store">
+            <h3>Instala NFC Tools</h3>
+            <p>Descarga la app <strong>NFC Tools</strong> gratis desde <strong>Play Store</strong> (Android) o <strong>App Store</strong> (iPhone).</p>
+          </li>
+          <li class="guia-step">
+            <div class="guia-number">3</div>
+            <img src="assets/guia-3.svg?v=16" alt="Abrir Escribir y añadir registro en NFC Tools">
+            <h3>Entra en Escribir y añade un registro</h3>
+            <p>Abre NFC Tools, pulsa <strong>Escribir / Write</strong> y después <strong>Añadir registro / Add a record</strong>.</p>
+          </li>
+          <li class="guia-step">
+            <div class="guia-number">4</div>
+            <img src="assets/guia-4.svg?v=16" alt="Elegir el tipo URL y pegar el enlace copiado">
+            <h3>Elige URL y pega el enlace</h3>
+            <p>Selecciona el tipo <strong>URL / Website</strong>, pega el enlace que copiaste y confirma con <strong>Aceptar / OK</strong>.</p>
+          </li>
+          <li class="guia-step">
+            <div class="guia-number">5</div>
+            <img src="assets/guia-5.svg?v=16" alt="Acercar la tarjeta al móvil y pulsar Escribir">
+            <h3>Acerca la tarjeta y escribe</h3>
+            <p>Acerca la tarjeta al móvil y pulsa <strong>Escribir / Write</strong>. Repite lo mismo con cada tarjeta del pack.</p>
+          </li>
+          <li class="guia-step">
+            <div class="guia-number">6</div>
+            <img src="assets/guia-6.svg?v=16" alt="Comprobar que la tarjeta abre la página de reseñas">
+            <h3>Comprueba que funciona</h3>
+            <p>Acerca el móvil a una tarjeta: debe abrir tu página de reseñas. Si se abre, ya está todo listo.</p>
+          </li>
+        </ol>
+        <p class="guia-tip">¿Te sale algún paso raro? Escríbenos a <a href="mailto:malaganfc@gmail.com">malaganfc@gmail.com</a> y te lo ayudamos a resolver.</p>
+      </div>
+    </section>
+
+    <!-- ================= PACK BUILDER ================= -->
+    <section class="section packs" id="packs">
+      <div class="wrap">
+        <div class="tabs" id="productTabs" role="tablist" aria-label="Modelo de tarjeta">
+          <button role="tab" class="active" data-model="flip" aria-selected="true"><span>Flip</span><small>desde €38,00</small></button>
+          <button role="tab" data-model="adhesiva" aria-selected="false"><span>Adhesiva</span><small>desde €27,95</small></button>
+          <button role="tab" data-model="soporte" aria-selected="false"><span>Soporte</span><small>desde €29,99</small></button>
+        </div>
+        <div class="builder">
+          <div class="builder-media">
+            <div class="media-frame" id="mediaFrame">
+              <img id="mainProductImg" src="assets/flip-nueva.png" alt="Tarjeta NFC Flip">
+            </div>
+            <div class="thumbs" id="thumbs"></div>
+          </div>
+          <div class="builder-info">
+            <h2>Elige tu tarjeta</h2>
+            <p class="muted">Termina el pedido en Payhip: allí eliges el pack, el acabado y la dirección de envío.</p>
+            <div class="price-info" id="priceInfo"></div>
+            <div class="buy-row">
+              <a class="btn btn-primary btn-buy" id="buyBtn" href="https://payhip.com/b/JGma0" target="_blank" rel="noopener noreferrer">Comprar Flip en Payhip</a>
+            </div>
+            <p class="muted small payhip-note">Pago seguro en Payhip. Recibirás los datos de tu pedido por email.</p>
+            <ul class="trust">
+              <li>Envío gratis a toda España</li><li>Devolución gratis en 14 días</li>
+              <li>Pago seguro y único</li><li>iPhone y Android con NFC</li>
+            </ul>
+            <a class="bulk-link" href="#distribuidor">¿Necesitas más cantidad? Escríbenos →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RESELLERS ================= -->
+    <section class="section resellers" id="revendedores">
+      <div class="wrap">
+        <div class="section-head left">
+          <p class="eyebrow dark">Compra por volumen</p>
+          <h2>Para revendedores</h2>
+          <p class="lead">Compra por packs a precio fijo y véndelas a los negocios de tu zona. Estos son los tres modelos, tal como los recibirás:</p>
+        </div>
+        <ul class="feature-list">
+          <li>Precio fijo por pack</li><li>Envío gratis</li><li>Combina modelos</li>
+        </ul>
+        <p><a class="bulk-link" href="#guia-ventas">Ver guía de ventas para revendedores →</a></p>
+
+        <div class="reseller-grid">
+          <article class="reseller-card">
+            <div class="reseller-top"><span>01</span><div class="reseller-frame" style="aspect-ratio: 432 / 437"><img src="assets/flip-nueva.png" alt="Flip"></div></div>
+            <h3>Doble cara · Flip</h3><p class="unit">desde €2,80/ud.</p>
+            <p class="desc">Tarjeta rígida tamaño tarjeta de crédito, con una cara negra y otra blanca. Elige con QR o sin QR.</p>
+            <div class="price-row"><span>10 tarjetas</span><span>€3,80/ud. <em>-21 %</em></span><strong><s>€48,00</s> €38,00</strong></div>
+            <div class="price-row"><span>30 tarjetas</span><span>€3,20/ud. <em>-33 %</em></span><strong><s>€144,00</s> €96,00</strong></div>
+            <div class="price-row best"><span>50 tarjetas</span><span>€2,80/ud. · mejor precio <em>-42 %</em></span><strong><s>€240,00</s> €140,00</strong></div>
+            <a class="btn btn-outline" href="https://payhip.com/b/JGma0" target="_blank" rel="noopener noreferrer">Comprar Flip</a>
+          </article>
+          <article class="reseller-card">
+            <div class="reseller-top"><span>02</span><div class="reseller-frame" style="aspect-ratio: 271 / 292"><img src="assets/adhesiva-nueva.png" alt="Adhesiva"></div></div>
+            <h3>Se pega · Adhesiva</h3><p class="unit">desde €3,75/ud.</p>
+            <p class="desc">Placa cuadrada que se pega en superficies lisas: mesas, cristal o pared. Siempre a la vista.</p>
+            <div class="price-row"><span>5 tarjetas</span><span>€5,59/ud.</span><strong>€27,95</strong></div>
+            <div class="price-row"><span>10 tarjetas</span><span>€4,50/ud. <em>-20 %</em></span><strong><s>€56,00</s> €44,99</strong></div>
+            <div class="price-row best"><span>20 tarjetas</span><span>€3,75/ud. · mejor precio <em>-33 %</em></span><strong><s>€112,00</s> €74,99</strong></div>
+            <a class="btn btn-outline" href="https://payhip.com/b/2YSR7" target="_blank" rel="noopener noreferrer">Comprar Adhesiva</a>
+          </article>
+          <article class="reseller-card">
+            <div class="reseller-top"><span>03</span><div class="reseller-frame" style="aspect-ratio: 456 / 340"><img src="assets/stand-nueva.png" alt="Soporte"></div></div>
+            <h3>De pie · Soporte</h3><p class="unit">desde €4,00/ud.</p>
+            <p class="desc">Expositor de pie en forma de L, en negro o blanco. Para dejar sobre el mostrador o en recepción.</p>
+            <div class="price-row"><span>5 tarjetas</span><span>€6,00/ud.</span><strong>€29,99</strong></div>
+            <div class="price-row"><span>10 tarjetas</span><span>€4,80/ud. <em>-20 %</em></span><strong><s>€60,00</s> €47,95</strong></div>
+            <div class="price-row best"><span>20 tarjetas</span><span>€4,00/ud. · mejor precio <em>-33 %</em></span><strong><s>€120,00</s> €79,99</strong></div>
+            <a class="btn btn-outline" href="https://payhip.com/b/JH831" target="_blank" rel="noopener noreferrer">Comprar Soporte</a>
+          </article>
+        </div>
+        <p class="center muted">Precios con IVA y envío incluidos. Puedes combinar modelos en el mismo pedido.</p>
+
+        <!-- distributor form -->
+        <div class="distributor" id="distribuidor">
+          <p class="eyebrow dark">Pedidos grandes</p>
+          <h2>Pide precio de distribuidor</h2>
+          <p class="lead">Cuéntanos qué modelo y cuántas tarjetas necesitas y te respondemos por email con el precio.</p>
+          <ul class="feature-list"><li>Combina modelos y colores</li><li>Envío gratis a toda España</li></ul>
+          <form id="distributorForm" class="form-grid" action="https://formsubmit.co/malaganfc@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Solicitud de distribuidor — Málaga NFC">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <label>Nombre<input name="nombre" required placeholder="Tu nombre"></label>
+            <label>Email<input name="email" type="email" required placeholder="tu@email.com"></label>
+            <label>Modelo<select name="modelo"><option>Flip</option><option>Adhesiva</option><option>Soporte negro</option><option>Soporte blanco</option><option>Varios</option></select></label>
+            <label>Cantidad<input name="cantidad" type="number" min="21" value="50" required></label>
+            <label>Teléfono (opcional)<input name="telefono" type="tel" placeholder="600 000 000"></label>
+            <label class="full">Mensaje (opcional)<textarea name="mensaje" rows="3"></textarea></label>
+            <button class="btn btn-primary full" type="submit">Pedir precio de distribuidor</button>
+            <p class="form-msg full" id="distributorMsg" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GUÍA DE VENTAS ================= -->
+    <section class="section sales-guide" id="guia-ventas">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow dark">Guía de ventas</p>
+          <h2>Cómo vender tarjetas NFC a negocios</h2>
+          <p class="lead">Un método práctico para revendedores: detectar el momento, hacer una demo real y cerrar sin prometer lo que no puedes garantizar.</p>
+        </div>
+
+        <ol class="sales-grid">
+          <li class="sales-step">
+            <span class="step-num">1</span>
+            <h3>Detecta el momento</h3>
+            <p>Fíjate en negocios que ya cuidan su presencia en Google: locales nuevos, hostelería, clínicas, talleres o tiendas con actividad reciente. Cuanta más relación tienen con sus clientes, más sentido tiene pedir la reseña allí mismo.</p>
+          </li>
+          <li class="sales-step">
+            <span class="step-num">2</span>
+            <h3>Pregunta antes de vender</h3>
+            <p>Empieza con: «¿Cómo pides la reseña cuando el cliente se va contento?». Deja que te responda. Es habitual que se le olvide al llegar a casa y que entonces ya no escriba.</p>
+          </li>
+          <li class="sales-step">
+            <span class="step-num">3</span>
+            <h3>Haz la demo en 30 segundos</h3>
+            <p>Lleva una tarjeta configurada y un móvil con NFC. Si te da su enlace, usa su ficha real: acerca el móvil y se abre su página de reseñas. Sin apps, sin buscar el negocio y sin enfocar códigos.</p>
+          </li>
+          <li class="sales-step">
+            <span class="step-num">4</span>
+            <h3>Cierra con un plan concreto</h3>
+            <p>Propón un pack pequeño para probar en el mostrador, por ejemplo 10 Flip. Fija tu precio de venta a partir del precio de distribuidor: como referencia, al público el pack de 10 sale a 38 € (3,80 €/tarjeta) y los de 30 y 50 a 3,20 € y 2,80 € la unidad. Vende la facilidad de pedir la reseña, nunca un número de reseñas.</p>
+          </li>
+        </ol>
+
+        <div class="sales-lower">
+          <div class="sales-script">
+            <h3>Guion que puedes copiar</h3>
+            <p>«Hola [Nombre], soy [Tu nombre]. Trabajo con tarjetas NFC para que tus clientes dejen la reseña de Google aquí mismo, en el local: acercan el móvil y se abre tu página, sin buscar ni escanear. No hay cuotas. ¿Te hago una prueba de 30 segundos? Si te encaja, te preparo un pack de 10 tarjetas con envío incluido y te paso el presupuesto.»</p>
+            <p class="muted">Sustituye los corchetes por tus datos y di siempre tu precio de venta: el precio de distribuidor te lo facilitamos por email.</p>
+          </div>
+          <div class="accordion sales-objections">
+            <h3>Objeciones frecuentes</h3>
+            <details open><summary>«¿Y si mi cliente no quiere escribir?»</summary><p>La tarjeta no escribe por él: solo le abre la página de reseñas en el momento. No garantizamos reseñas ni valoraciones; vendemos la facilidad de pedirla.</p></details>
+            <details><summary>«Ya tengo un código QR en la mesa»</summary><p>Con QR hay que abrir la cámara y enfocar; con NFC basta con acercar el móvil. Pueden convivir: ofrece la tarjeta como la opción más rápida.</p></details>
+            <details><summary>«¿Funcionará con mi móvil?»</summary><p>Necesita un móvil con NFC activado. Compruébalo durante la visita con el teléfono del propio cliente; si no lo tiene, este producto no es para él.</p></details>
+            <details><summary>«¿Hay que pagar una cuota?»</summary><p>No. Es un pago único por las tarjetas, sin suscripciones ni cuotas mensuales.</p></details>
+            <details><summary>«¿Quién las configura?»</summary><p>Solo se hace una vez, con el enlace a la ficha de Google. Están los pasos en la <a href="#configuracion">guía de configuración</a>. Si quieres hacerlo tú por él, acordad antes el precio de ese servicio.</p></details>
+          </div>
+        </div>
+
+        <div class="sales-follow">
+          <h3>Después de la venta</h3>
+          <p>Anota a quién vendiste, qué modelo y con qué enlace quedaron configuradas. A los pocos días, pregunta si la demo funcionó y si necesita más tarjetas: es la forma más sencilla de repetir pedido sin hacer promesas.</p>
+          <div class="sales-actions">
+            <a class="btn btn-primary" href="#distribuidor">Pedir precio de distribuidor</a>
+            <a class="btn btn-outline" href="#packs">Ver modelos y packs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COMPARISON ================= -->
+    <section class="section comparison" id="comparacion">
+      <div class="wrap">
+        <h2>Lo que cambia en tu mostrador</h2>
+        <p class="lead center">Pedir una reseña deja de depender de que el cliente se acuerde al llegar a casa.</p>
+        <div class="compare-grid">
+          <div class="compare-col bad">
+            <h3>Sin tarjeta</h3>
+            <ul><li>Le pides la reseña y se le olvida al salir.</li><li>Tiene que buscar tu negocio en Google y encontrar dónde se escribe.</li><li>Un código QR obliga a abrir la cámara y enfocar.</li></ul>
+          </div>
+          <div class="compare-col good">
+            <h3>Con Málaga NFC</h3>
+            <ul><li>La deja en el momento, mientras sigue en tu negocio.</li><li>Se abre tu página de reseñas directamente.</li><li>Solo tiene que acercar el móvil a la tarjeta.</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+    <section class="section features" id="caracteristicas">
+      <div class="wrap">
+        <h2>Características</h2>
+        <p class="lead center">Lo mismo en los tres modelos: Flip, Adhesiva y Soporte.</p>
+        <div class="feature-grid">
+          <div><span class="feature-ico">◉</span><h3>Lectura</h3><p>NFC, con solo acercar el móvil</p></div>
+          <div><span class="feature-ico">▣</span><h3>Compatible con</h3><p>iPhone y Android con NFC</p></div>
+          <div><span class="feature-ico">∞</span><h3>Funcionamiento</h3><p>Sin batería y sin apps</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section faq" id="faq">
+      <div class="wrap faq-grid">
+        <div class="faq-intro">
+          <h2>Preguntas frecuentes</h2>
+          <p>¿Tienes otra duda? <a href="#distribuidor">Escríbenos</a> y te respondemos.</p>
+        </div>
+        <div class="accordion">
+          <details open><summary>¿Cuánto tarda en llegar y cuánto cuesta el envío?</summary><p>El envío es gratis a toda España y el pedido llega en 1 a 2 semanas. Tenemos el stock aquí, así que no hay esperas por envíos desde fuera.</p></details>
+          <details><summary>¿Funciona con todos los móviles?</summary><p>Funciona con cualquier iPhone y con móviles Android que tengan NFC activado, que hoy es la gran mayoría. No necesitas descargar ninguna app.</p></details>
+          <details><summary>¿Tengo que configurar algo?</summary><p>Solo una vez: le asocias el enlace a tu ficha de Google. Después, ya están listas para usar. Tienes todos los pasos en la <a href="#configuracion">guía de configuración</a>.</p></details>
+          <details><summary>¿Tengo que pagar alguna cuota?</summary><p>No. Es un pago único por las tarjetas. No hay suscripciones ni cuotas mensuales.</p></details>
+          <details><summary>¿Dónde se realiza el pago?</summary><p>El pago se hace de forma segura en <a href="https://payhip.com/b/JGma0" target="_blank" rel="noopener noreferrer">Payhip</a>. Allí eliges el pack y el acabado, y recibes el detalle del pedido por email.</p></details>
+          <details><summary>¿Qué pack me conviene?</summary><p>Cuantas más tarjetas pidas, más barata sale cada una. En Flip, el pack de 50 es el que mejor precio por unidad ofrece.</p></details>
+          <details><summary>¿Puedo devolverlas?</summary><p>Sí. Tienes devolución gratis en 14 días, según nuestra <a href="#devoluciones">política de devoluciones</a>.</p></details>
+          <details><summary>¿Y si necesito más cantidad?</summary><p><a href="#distribuidor">Escríbenos</a> y te hacemos un precio de distribuidor.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+    <section class="section newsletter" id="newsletter">
+      <div class="wrap">
+        <h2>Ofertas y novedades, solo de vez en cuando</h2>
+        <p class="lead center">Apúntate y te avisamos de nuevos modelos y promociones. Sin spam: puedes darte de baja cuando quieras.</p>
+        <form id="newsForm" class="news-form" action="https://formsubmit.co/malaganfc@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nueva suscripción — Málaga NFC">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="email" id="newsEmail" name="email" placeholder="tu@email.com" aria-label="Tu email" required>
+          <button class="btn btn-primary" type="submit">Suscribirme</button>
+        </form>
+        <p class="form-msg" id="newsMsg" role="status"></p>
+      </div>
+    </section>
+
+    <!-- ================= CTA FINAL ================= -->
+    <section class="cta-final">
+      <div class="wrap">
+        <h2>Empieza a sumar reseñas en Google</h2>
+        <p>Packs desde €27,95 con envío gratis a toda España.</p>
+        <a class="btn btn-primary" href="#packs">Ver packs</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= INFORMACIÓN LEGAL ================= -->
+  <section class="section legal" id="info">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Información</p>
+        <h2>Envíos, devoluciones y más</h2>
+        <p class="lead">Todo lo que necesitas saber antes de comprar. ¿Sigues con dudas? <a href="#distribuidor">Escríbenos</a>.</p>
+      </div>
+      <div class="accordion legal-accordion">
+        <details id="envios">
+          <summary>Envíos</summary>
+          <p>El envío es gratis a toda España y el pedido llega en 1 a 2 semanas desde que se confirma el pago. Tenemos stock aquí, así que no hay esperas por envíos desde fuera. No añadimos gastos de envío al precio de los packs.</p>
+          <ul>
+            <li>La dirección de entrega se introduce en Payhip al finalizar la compra y es Payhip quien nos la remite una vez pagado.</li>
+            <li>Recibirás un email de confirmación con el detalle de tu pedido.</li>
+            <li>Si necesitas recogerlo en un punto concreto o hay alguna incidencia, escríbenos a <a href="mailto:malaganfc@gmail.com">malaganfc@gmail.com</a>.</li>
+            <li>Por ahora solo enviamos dentro de España. Si estás fuera y te interesa, consúltanos antes de comprar.</li>
+          </ul>
+        </details>
+        <details id="devoluciones">
+          <summary>Devoluciones</summary>
+          <p>Tienes 14 días naturales desde que recibes el pedido para devolverlo, sin coste. Solo necesitas avisarnos antes por email.</p>
+          <ul>
+            <li>Escríbenos a <a href="mailto:malaganfc@gmail.com">malaganfc@gmail.com</a> con tu nombre, el número de pedido y el motivo de la devolución.</li>
+            <li>Las tarjetas deben estar sin usar y en su embalaje original.</li>
+            <li>Una vez recibido el paquete y comprobado su estado, devolvemos el importe a través de Payhip en un plazo máximo de 14 días.</li>
+            <li>Si llega dañado, incompleto o no es lo que esperabas, contáctanos y lo gestionamos sin coste para ti.</li>
+          </ul>
+        </details>
+        <details id="privacidad">
+          <summary>Privacidad</summary>
+          <p>Solo recogemos los datos que nos facilitas: nombre, email y mensaje en los formularios de contacto, distribuidor y novedades; y, al comprar, los datos de entrega y del pedido que gestiona Payhip.</p>
+          <ul>
+            <li>Los formularios de este sitio se envían a través de FormSubmit y la compra se gestiona en Payhip. Cada uno trata sus datos según su propia política de privacidad.</li>
+            <li>Usamos los datos para responderte, gestionar tu pedido y, si te has suscrito, avisarte de novedades. Puedes darte de baja cuando quieras.</li>
+            <li>Conservamos los datos solo mientras sean necesarios para esas finalidades.</li>
+            <li>No vendemos ni cedemos tus datos a terceros con fines publicitarios.</li>
+            <li>Este sitio no instala cookies de seguimiento propias.</li>
+            <li>Puedes pedir acceso, corrección o borrado de tus datos escribiendo a <a href="mailto:malaganfc@gmail.com">malaganfc@gmail.com</a>.</li>
+          </ul>
+        </details>
+        <details id="terminos">
+          <summary>Términos del servicio</summary>
+          <p>La compra se formaliza en Payhip: allí eliges la variedad y la cantidad, introduces la dirección y realizas el pago. Solo recibirás la confirmación de pedido cuando el pago se haya completado.</p>
+          <ul>
+            <li>Los precios son los indicados para cada pack en este sitio y se muestran de nuevo en Payhip antes de pagar.</li>
+            <li>Las tarjetas necesitan un móvil con NFC y asociarse a tu ficha de Google para funcionar. No garantizamos un número concreto de reseñas: dependen de tus clientes.</li>
+            <li>Las guías y los contenidos de este sitio son orientativos y pueden actualizarse.</li>
+            <li>Nos reservamos el derecho a modificar estos términos; la versión vigente será la publicada aquí.</li>
+          </ul>
+        </details>
+        <details id="legal">
+          <summary>Información legal</summary>
+          <p>Málaga NFC es una tienda online de tarjetas NFC para conseguir más reseñas en Google. El titular del sitio es Málaga NFC y puedes contactar en <a href="mailto:malaganfc@gmail.com">malaganfc@gmail.com</a>.</p>
+          <ul>
+            <li>Para cualquier consulta sobre identificación fiscal o facturación, escríbenos antes de comprar y te facilitaremos los datos correspondientes.</li>
+            <li>Los pedidos y los pagos se gestionan a través de Payhip.</li>
+            <li>Google es una marca registrada de Google LLC. Málaga NFC no está afiliada a Google ni forma parte de ella.</li>
+            <li>El contenido y los textos de este sitio no pueden reproducirse sin autorización.</li>
+          </ul>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a href="#top"><img src="assets/logo-neon.png" alt="Málaga NFC" width="61" height="61"></a>
+        <p>Más reseñas en Google, con un solo toque.</p>
+      </div>
+      <nav aria-label="Enlaces del sitio">
+        <h3>Explora</h3>
+        <a href="#packs">Packs</a><a href="#como-funciona">Cómo funciona</a><a href="#configuracion">Guía de configuración</a><a href="#caracteristicas">Características</a><a href="#revendedores">Revendedores</a><a href="#guia-ventas">Guía de ventas</a><a href="#faq">Preguntas frecuentes</a>
+      </nav>
+      <nav aria-label="Información">
+        <h3>Información</h3>
+        <a href="#distribuidor">Contacto</a><a href="#envios">Envíos</a><a href="#devoluciones">Devoluciones</a><a href="#privacidad">Privacidad</a><a href="#terminos">Términos del servicio</a><a href="#legal">Información legal</a>
+      </nav>
+      <div class="footer-contact">
+        <h3>Contacto</h3>
+        <a href="mailto:malaganfc@gmail.com">malaganfc@gmail.com</a>
+        <a href="#distribuidor">Formulario de contacto</a>
+      </div>
+    </div>
+    <div class="wrap footer-bottom"><span>© 2026 Málaga NFC</span><span>Hecho para sumar reseñas.</span></div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js?v=18"></script>
+</body>
+</html>

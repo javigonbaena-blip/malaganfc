@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="180" viewBox="0 0 240 180" role="img" aria-label="Acercar la tarjeta al móvil y pulsar Escribir">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1620"/>
+      <stop offset="1" stop-color="#070a0f"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8dfaff"/>
+      <stop offset="1" stop-color="#00a9d6"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="238" height="178" rx="16" fill="url(#bg)" stroke="#1b3a4a"/>
+  <rect x="5" y="5" width="230" height="170" rx="13" fill="none" stroke="#00d4ff" stroke-opacity=".16"/>
+
+  <rect x="22" y="24" width="74" height="128" rx="13" fill="#111a26" stroke="#24445a"/>
+  <rect x="28" y="32" width="62" height="112" rx="7" fill="#080e15"/>
+  <circle cx="59" cy="138" r="3" fill="#2d5570"/>
+  <text x="59" y="46" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="bold" fill="#7df9ff" text-anchor="middle">NFC TOOLS</text>
+  <circle cx="59" cy="112" r="21" fill="none" stroke="#00d4ff" stroke-opacity=".3" stroke-width="1.5"/>
+  <rect x="38" y="100" width="42" height="24" rx="12" fill="url(#neon)"/>
+  <text x="59" y="116" font-family="Arial, Helvetica, sans-serif" font-size="8.5" font-weight="bold" fill="#04121a" text-anchor="middle">WRITE</text>
+
+  <g fill="none" stroke="#00d4ff" stroke-width="2.2" stroke-linecap="round">
+    <path d="M104 66a20 20 0 0 1 0 28"/>
+    <path d="M113 58a32 32 0 0 1 0 44"/>
+  </g>
+
+  <g transform="rotate(-8 176 80)">
+    <rect x="136" y="54" width="80" height="52" rx="9" fill="#12293a" stroke="#00d4ff" stroke-width="1.8"/>
+    <rect x="144" y="62" width="64" height="36" rx="6" fill="#0a1824" stroke="#0077b6"/>
+    <g fill="none" stroke="#7df9ff" stroke-width="1.8" stroke-linecap="round">
+      <path d="M164 72a9 9 0 0 1 0 14"/>
+      <path d="M170 68a15 15 0 0 1 0 22"/>
+    </g>
+    <text x="184" y="82" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="bold" fill="#7df9ff" text-anchor="middle">NFC</text>
+  </g>
+
+  <path d="M160 120c-12 8-24 8-34 2" fill="none" stroke="#7df9ff" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4"/>
+  <path d="M130 118l-4 4 6 2" fill="none" stroke="#7df9ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="120" y="166" font-family="Arial, Helvetica, sans-serif" font-size="8.5" font-weight="bold" fill="#00d4ff" text-anchor="middle">ACERCA Y ESCRIBE</text>
+</svg>

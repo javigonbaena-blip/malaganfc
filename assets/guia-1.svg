@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="180" viewBox="0 0 240 180" role="img" aria-label="Buscar el establecimiento y copiar el enlace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1620"/>
+      <stop offset="1" stop-color="#070a0f"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8dfaff"/>
+      <stop offset="1" stop-color="#00a9d6"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="238" height="178" rx="16" fill="url(#bg)" stroke="#1b3a4a"/>
+  <rect x="5" y="5" width="230" height="170" rx="13" fill="none" stroke="#00d4ff" stroke-opacity=".16"/>
+
+  <rect x="18" y="18" width="204" height="136" rx="10" fill="#111a26" stroke="#24445a"/>
+  <path d="M18 28a10 10 0 0 1 10-10h184a10 10 0 0 1 10 10v12H18z" fill="#0b121c"/>
+  <line x1="18" y1="40" x2="222" y2="40" stroke="#24445a"/>
+  <circle cx="32" cy="29" r="3.2" fill="#00d4ff"/>
+  <circle cx="44" cy="29" r="3.2" fill="#2d5570"/>
+  <circle cx="56" cy="29" r="3.2" fill="#2d5570"/>
+  <rect x="76" y="23" width="130" height="12" rx="6" fill="#152434"/>
+  <text x="141" y="32" font-family="Arial, Helvetica, sans-serif" font-size="7.5" fill="#7df9ff" text-anchor="middle">productmate · tu negocio</text>
+
+  <rect x="32" y="50" width="176" height="32" rx="8" fill="#080e15" stroke="#00d4ff" stroke-opacity=".75"/>
+  <circle cx="52" cy="66" r="8" fill="none" stroke="#00d4ff" stroke-width="2"/>
+  <line x1="58" y1="72" x2="64" y2="78" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/>
+  <text x="70" y="70" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#d7ecf7">tu negocio</text>
+  <line x1="126" y1="61" x2="126" y2="73" stroke="#7df9ff" stroke-width="1.5"/>
+
+  <rect x="32" y="90" width="176" height="44" rx="8" fill="#0d2230" stroke="#00d4ff" stroke-opacity=".9"/>
+  <rect x="44" y="102" width="20" height="20" rx="3" fill="none" stroke="#7df9ff" stroke-width="1.5"/>
+  <path d="M49 106v2 M55 106v2 M61 106v2 M49 112v2 M55 112v2 M61 112v2 M51 122v-6h6v6" fill="none" stroke="#7df9ff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="72" y="108" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="bold" fill="#ffffff">Tu establecimiento</text>
+  <text x="72" y="123" font-family="Arial, Helvetica, sans-serif" font-size="8" fill="#7df9ff">reseñas · Google</text>
+  <rect x="178" y="100" width="22" height="22" rx="6" fill="url(#neon)"/>
+  <rect x="182" y="104" width="9" height="9" rx="1.5" fill="none" stroke="#04121a" stroke-width="1.5"/>
+  <rect x="186" y="108" width="9" height="9" rx="1.5" fill="#0d2230" stroke="#04121a" stroke-width="1.5"/>
+
+  <rect x="62" y="146" width="116" height="22" rx="11" fill="#00d4ff" fill-opacity=".12" stroke="#00d4ff"/>
+  <circle cx="76" cy="157" r="6" fill="#00d4ff"/>
+  <path d="M73 157l2 2 4-4" fill="none" stroke="#04121a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="88" y="161" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="bold" fill="#7df9ff">ENLACE COPIADO</text>
+</svg>
