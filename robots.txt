@@ -1,0 +1,5 @@
+# Málaga NFC
+User-agent: *
+Allow: /
+
+Sitemap: https://malaganfc.pages.dev/sitemap.xml
